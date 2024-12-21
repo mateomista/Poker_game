@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poker Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Poker Game</h1>
+
+    <div id="tabla-resultados">
+        <h2 id="resumen">Resumen del Juego</h2>
+        <table id="tablaResultados" border="1">
+            <thead>
+                <tr>
+                    <th>Número de Mano</th>
+                    <th>Mano Jugador</th>
+                    <th>Mano Computadora</th>
+                    <th>Ganador de la Mano</th>
+                </tr>
+            </thead>
+            <tbody id="tablaResultadosBody">
+                
+            </tbody>
+        </table>
+    </div>
+    
+       
+    <div id="contenedor-baraja" class="baraja-container">
+
+        <div id="pozo-general">
+            <h6 id="contador-mano">Pozo</h6>
+                <h5 id="total-mano"></h5>
+        </div>
+
+        <div id="pozo-computadora">
+            <h6 id="contador-oponente">Pozo Oponente</h6>
+                <h5 id="total-oponente"></h5>
+        </div>
+        
+        <div id="pozo-jugador">
+            <h6 id="contador-jugador">Pozo Jugador</h6>
+                <h5 id="total-jugador"></h5>
+        </div>
+        
+        <div class="contenedor-mazo"></div> 
+
+        <div id="mano-pc">
+           
+            <div id="contenedor-PC"></div> 
+        </div>
+        
+        <div id="mano-jugador">
+            
+            <div id="contenedor-Player"></div> 
+        </div>
+    </div>
+    <div class="button-container">
+        <button id="bet-btn">Apuesta</button>
+        <button id="fold-btn">Fold</button>
+        <button id="see-btn">See</button>
+        <button id="raise-btn">Raise</button>
+        <button id="discard-btn">Descartar</button>
+        <button id="confirm-discard-btn">Confirmar Descarte</button>
+
+    </div>
+  
+    <script type="module" src="view.js"></script>
+    <script type="module" src="poker.js"></script>
+</body>
+</html>
